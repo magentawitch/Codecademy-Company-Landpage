@@ -1,6 +1,75 @@
 /* UNIVERSAL STYLES */
 
+html {
+    font-family: "Libre Franklin";
+    font-size: 16px;
+    background-color: #FFF8F0;
+}
+
+.main-content {
+    position: relative;
+    top: 5rem;
+    
+}
+
+
+
+.center {
+    text-align: center;
+}
+
+.button {
+    border-radius: 0.25rem;
+    background-color: #FFC1C1;
+    color: black;
+  }
+
+  .image-container {
+    overflow: hidden;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    display: block;
+  }
 /* HEADER */
+
+header {
+position: fixed;
+z-index: 5;
+background-color: #FFC1C1;
+border-bottom: solid 2px #B29292;
+width: 100%;
+}
+
+header .logo {
+    flex: 1;
+    font-family: "Poppins";
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: black;
+}
+
+header .content {
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+header nav ul {
+    display: flex;
+}
+
+nav li {
+    padding-left: 3rem;
+}
+
+nav a {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
 
 /* MAIN */
 
