@@ -4,6 +4,7 @@ html {
     font-family: "Libre Franklin";
     font-size: 16px;
     background-color: #FFF8F0;
+    color: #010101bf;
 }
 
 .main-content {
@@ -11,8 +12,6 @@ html {
     top: 5rem;
     
 }
-
-
 
 .center {
     text-align: center;
@@ -32,13 +31,30 @@ html {
     max-width: 100%;
     display: block;
   }
+
+  h1, h2, h3, h4, h5 {
+    font-family: "Poppins";
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 { 
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
 /* HEADER */
 
 header {
 position: fixed;
 z-index: 5;
-background-color: #FFC1C1;
-border-bottom: solid 2px #B29292;
+background-color: #FF8B73;
+border-bottom: solid 2px #541c42;
 width: 100%;
 }
 
@@ -47,7 +63,7 @@ header .logo {
     font-family: "Poppins";
     font-size: 1.75rem;
     font-weight: 500;
-    color: black;
+    color: #010101bf;
 }
 
 header .content {
@@ -71,6 +87,206 @@ nav a {
     font-weight: 400;
 }
 
-/* MAIN */
+/* HERO SECTION */
+
+#hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+
+
+}
+
+#hero-section.banner {
+    background:#FF9AA2;
+    background: linear-gradient(180deg, #FF9AA2, #FFB58A);
+    max-width: 100%;
+    font-family: "Poppins";
+}
+
+#banner-title {
+    font-size: 5rem;
+    font-weight: 600;
+    color:#80105da6;
+    margin-bottom: 1rem;
+}
+
+#banner-subtitle {
+    font-size: 2rem;
+    color:#802310a6;
+}
+
+
+/* MISSION */
+
+#mission.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff9aa2e2;
+    padding: 5rem 0;
+}
+
+#mission h2 {
+    color: #80105dc7;
+}
+
+#mission h3 {
+    margin-top: 1.5rem;
+    line-height: 1.2;
+    padding: 0 5rem;
+    opacity: 0.95;
+}
+
+
+/* SERVICES */
+
+#services.content {
+    background-color: #ff8a73df;
+    padding: 2rem;
+}
+
+#services.content h2 {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins";
+    color: #621405a6;
+}
+
+
+.services-containers {
+    display: flex;
+    justify-content: center;
+}
+
+.service-container {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 1rem 3rem 1rem;
+    height: 28.5rem;
+    width: 14rem;
+    border-radius: 8rem;
+    margin: 3rem;
+    border: solid 5px black;
+    background-color: #ff8c94bb;
+}
+.image-container {
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+    border: solid 5px black;
+    background-color: #FFF8F0;
+    padding: 3em;
+    margin-top: .5em;
+}
+
+.image-container img {
+    width: 100%;   
+}
+
+.service-container h4 {
+    font-family: "Poppins";
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: .75rem;
+}
+
+
+
+/* ABOUT US */
+
+#about-us.content {
+    background-color: #ff9aa2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+#about-us h2 {
+    color: #80105dc7;
+}
+
+#about-us h3 {
+    margin-top: 1.5rem;
+    line-height: 1.2;
+    padding: 0 5rem;
+    opacity: 0.95;
+}
+
+/* CONTACT US */
+
+#contact-us.content {
+    background-color: #FFD1DC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+#contact-us h2 {
+    color: #ef8753;
+    padding-bottom: 2rem;
+}
+
+#contact-us form {
+    padding: 0 3rem;
+    font-family: "Poppins";
+}
+
+
+
+#contact-us form label {
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+}
+
+#contact-us form input {
+    background-color: #FFF1E6;
+    font-family: "Poppins";
+    line-height: 1.5;
+    border: solid .125rem black;
+    border-radius: .5rem;
+    width: 19rem;
+    height: 1.5rem;
+}
+
+#contact-us form input:focus {
+    border: solid .125rem #ef8753;
+}
+
+#contact-us form input#message{
+    height: 5rem;
+}
+
+#contact-us form input#submit{
+    margin-top: 2rem;
+    width: auto;
+    height: auto;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+}
+
 
 /* FOOTER */
+
+footer {
+    background-color: #b38b8b;
+    padding: 1rem 2rem;
+}
+
+footer .content {
+    color: #FFF1E6;
+    display: flex;
+    font-size: .75rem;
+    opacity: 70%;
+  }
