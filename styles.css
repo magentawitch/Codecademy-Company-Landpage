@@ -3,14 +3,14 @@
 html {
     font-family: "Libre Franklin";
     font-size: 16px;
-    background-color: #FFF8F0;
+    background-color: #FFEDEB;
     color: #010101bf;
 }
 
 .main-content {
     position: relative;
     top: 5rem;
-    
+
 }
 
 .center {
@@ -21,41 +21,51 @@ html {
     border-radius: 0.25rem;
     background-color: #FFC1C1;
     color: black;
-  }
+}
 
-  .image-container {
+.button:hover {
+    background-color: #FF6F61;
+    color: white;
+}
+
+.image-container {
     overflow: hidden;
-  }
+}
 
-  .image-container img {
+.image-container img {
     max-width: 100%;
     display: block;
-  }
+}
 
-  h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: "Poppins";
-  }
+}
 
-  h1 {
+h1 {
     font-size: 5rem;
-  }
+}
 
-  h2 { 
+h2 {
     font-size: 3rem;
     font-weight: 500;
-  }
+}
 
-  h3 {
+h3 {
     font-size: 1.5rem;
-  }
+}
+
 /* HEADER */
 
 header {
-position: fixed;
-z-index: 5;
-background-color: #FF8B73;
-border-bottom: solid 2px #541c42;
-width: 100%;
+    position: fixed;
+    z-index: 5;
+    background-color: #FF8B73;
+    border-bottom: solid 2px #E65C47;
+    width: 100%;
 }
 
 header .logo {
@@ -79,12 +89,12 @@ header nav ul {
 }
 
 nav li {
-    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 nav a {
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 /* HERO SECTION */
@@ -94,12 +104,10 @@ nav a {
     justify-content: center;
     align-items: center;
     padding: 10rem;
-
-
 }
 
 #hero-section.banner {
-    background:#FF9AA2;
+    background: #FF9AA2;
     background: linear-gradient(180deg, #FF9AA2, #FFB58A);
     max-width: 100%;
     font-family: "Poppins";
@@ -108,13 +116,13 @@ nav a {
 #banner-title {
     font-size: 5rem;
     font-weight: 600;
-    color:#80105da6;
+    color: #80105da6;
     margin-bottom: 1rem;
 }
 
 #banner-subtitle {
     font-size: 2rem;
-    color:#802310a6;
+    color: #802310a6;
 }
 
 
@@ -130,7 +138,7 @@ nav a {
 }
 
 #mission h2 {
-    color: #80105dc7;
+    color: #d65448;
 }
 
 #mission h3 {
@@ -152,7 +160,7 @@ nav a {
     display: flex;
     justify-content: center;
     font-family: "Poppins";
-    color: #621405a6;
+    color: #FFD1DC;
 }
 
 
@@ -170,21 +178,23 @@ nav a {
     width: 14rem;
     border-radius: 8rem;
     margin: 3rem;
-    border: solid 5px black;
+    border: solid 3px black;
     background-color: #ff8c94bb;
+    box-shadow: 5px 5px 0px #FF6F61;
 }
+
 .image-container {
     width: 5em;
     height: 5em;
     border-radius: 100%;
-    border: solid 5px black;
-    background-color: #FFF8F0;
+    border: solid 4px black;
+    background-color: #FFEDEB;
     padding: 3em;
     margin-top: .5em;
 }
 
 .image-container img {
-    width: 100%;   
+    width: 100%;
 }
 
 .service-container h4 {
@@ -209,7 +219,7 @@ nav a {
 }
 
 #about-us h2 {
-    color: #80105dc7;
+    color: #FFD1DC;
 }
 
 #about-us h3 {
@@ -240,8 +250,6 @@ nav a {
     font-family: "Poppins";
 }
 
-
-
 #contact-us form label {
     line-height: 1.5;
     font-weight: 500;
@@ -253,21 +261,21 @@ nav a {
     background-color: #FFF1E6;
     font-family: "Poppins";
     line-height: 1.5;
-    border: solid .125rem black;
+    border: solid .1875rem black;
     border-radius: .5rem;
     width: 19rem;
     height: 1.5rem;
 }
 
 #contact-us form input:focus {
-    border: solid .125rem #ef8753;
+    border: solid .125rem #FF6F61;
 }
 
-#contact-us form input#message{
+#contact-us form input#message {
     height: 5rem;
 }
 
-#contact-us form input#submit{
+#contact-us form input#submit {
     margin-top: 2rem;
     width: auto;
     height: auto;
@@ -276,11 +284,17 @@ nav a {
     font-size: 1.1rem;
 }
 
+#contact-us form input.button:hover {
+    background-color: #FF6F61;
+    color: white;
+}
+
+
 
 /* FOOTER */
 
 footer {
-    background-color: #b38b8b;
+    background-color: #FF8C94;
     padding: 1rem 2rem;
 }
 
@@ -288,5 +302,5 @@ footer .content {
     color: #FFF1E6;
     display: flex;
     font-size: .75rem;
-    opacity: 70%;
-  }
+    opacity: 80%;
+}
