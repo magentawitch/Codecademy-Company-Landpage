@@ -58,6 +58,26 @@ h3 {
     font-size: 1.5rem;
 }
 
+@media only screen and (max-width: 780px) {
+    .main-content {
+        position: relative;
+        top: 3.5rem;
+    
+    }
+}
+
+@media only screen and (max-width: 424px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    html {
+        font-size: 12px;
+    }
+}
+
 /* HEADER */
 
 header {
@@ -88,13 +108,51 @@ header nav ul {
     display: flex;
 }
 
-nav li {
+.desktop ul li {
     padding-right: 3rem;
 }
 
 nav a {
     font-size: 1.1rem;
     font-weight: 500;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 780px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    header .content {
+        padding: .5rem 0;
+        height: 3.5rem;
+        justify-content: space-around;
+      }
+
+      header .mobile ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+      }
+    
+      .mobile ul li {
+        padding-right: 0px;
+      }
+
+      header .mobile img {
+        width: 2rem;
+        height: 2rem;
+      }
 }
 
 /* HERO SECTION */
@@ -125,6 +183,16 @@ nav a {
     color: #802310a6;
 }
 
+@media only screen and (max-width: 780px) {
+    #banner-title {
+        font-size: 4.375rem;
+    }
+
+    #banner-subtitle {
+        font-size: 1.5rem;
+    }
+}
+
 
 /* MISSION */
 
@@ -146,6 +214,21 @@ nav a {
     line-height: 1.2;
     padding: 0 5rem;
     opacity: 0.95;
+}
+
+@media only screen and (max-width: 780px) {
+    #mission.content {
+        padding: 3rem 0;
+    }
+
+    #mission.center {
+        text-align: start;
+    }
+
+    #mission h3 {
+        font-size: 1.2rem;
+        padding: 0 2rem;
+    }
 }
 
 
@@ -205,6 +288,26 @@ nav a {
     margin-bottom: .75rem;
 }
 
+@media only screen and (max-width: 780px) {
+
+    .services-containers {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .service-container {
+        width: 18rem;
+        border-radius: 12rem;
+    }
+
+    .service-container p {
+        font-size: 1.150rem;
+        line-height: 1.1;
+    }
+}
 
 
 /* ABOUT US */
@@ -227,6 +330,21 @@ nav a {
     line-height: 1.2;
     padding: 0 5rem;
     opacity: 0.95;
+}
+
+@media only screen and (max-width: 780px) {
+    #about-us.content {
+        padding: 3rem 0;
+    }
+
+    #about-us.center {
+        text-align: start;
+    }
+
+    #about-us h3 {
+        font-size: 1.2rem;
+        padding: 0 2rem;
+    }
 }
 
 /* CONTACT US */
