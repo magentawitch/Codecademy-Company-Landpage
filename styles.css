@@ -121,7 +121,7 @@ nav a {
     display: none;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 770px) {
 
     .desktop {
         display: none;
@@ -183,10 +183,15 @@ nav a {
     color: #802310a6;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 760px) {
+   
     #banner-title {
         font-size: 4.375rem;
     }
+}
+
+
+@media only screen and (max-width: 768px) {
 
     #banner-subtitle {
         font-size: 1.5rem;
@@ -206,7 +211,7 @@ nav a {
 }
 
 #mission h2 {
-    color: #d65448;
+    color: #FFD1DC;
 }
 
 #mission h3 {
@@ -216,7 +221,7 @@ nav a {
     opacity: 0.95;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 800px) {
     #mission.content {
         padding: 3rem 0;
     }
@@ -288,7 +293,7 @@ nav a {
     margin-bottom: .75rem;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 859px) {
 
     .services-containers {
         display: flex;
@@ -332,7 +337,7 @@ nav a {
     opacity: 0.95;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 800px) {
     #about-us.content {
         padding: 3rem 0;
     }
